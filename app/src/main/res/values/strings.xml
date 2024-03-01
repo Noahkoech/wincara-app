@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WINCARA</string>
+    <string name="username">username</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="todo">TODO</string>
+</resources>
