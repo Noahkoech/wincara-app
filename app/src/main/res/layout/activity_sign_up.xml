@@ -58,6 +58,19 @@
         android:padding="18dp"
         android:backgroundTint="@color/white"
         android:layout_marginBottom="20dp" />
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/rounded_circle"
+        android:padding="18dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="20dp" />
 
 
     <RadioGroup

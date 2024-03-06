@@ -39,17 +39,17 @@
         android:id="@+id/username_input"/>
 
     <EditText
+        android:id="@+id/password_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_circle"
         android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="18dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="20sp"
-        android:background="@drawable/rounded_circle"
-        android:padding="18dp"
-        android:inputType="text"
-        android:id="@+id/password_input"/>
+        android:textSize="20sp" />
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
