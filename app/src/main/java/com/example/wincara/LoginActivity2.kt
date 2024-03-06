@@ -9,17 +9,19 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.wincara.registration.database.MyDatabaseHelper
 
 class LoginActivity2 : AppCompatActivity() {
+    private lateinit var dbHelper: MyDatabaseHelper
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login2)
 
-        val dbHelper = MyDatabaseHelper(this)
+        dbHelper = MyDatabaseHelper(this)
 
         val loginButton = findViewById<Button>(R.id.login)
         loginButton.setOnClickListener {
             // Retrieve input data
-            val username = findViewById<EditText>(R.id.usernameEditText).text.toString().trim()
-            val password = findViewById<EditText>(R.id.passwordEditText).text.toString()
+            val username = findViewById<EditText>(R.id.username_input).text.toString().trim()
+            val password = findViewById<EditText>(R.id.password_input).text.toString()
 
             // Check if any fields are empty
             if (username.isEmpty() || password.isEmpty()) {
@@ -33,13 +35,16 @@ class LoginActivity2 : AppCompatActivity() {
 
             // Check if a user with the provided username and password was found
             if (user != null) {
-                // Login successful, navigate to the home activity (replace HomeActivity::class.java with your home activity)
+                // Login successful, navigate to the home activity
                 val intent = Intent(this@LoginActivity2, HommeActivity::class.java)
                 startActivity(intent)
-                finish() // Finish this activity to prevent the user from coming back to the login screen
+                // Optionally, you can display a success message
+                Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
+                // Finish this activity to prevent the user from coming back to the login screen
+                finish()
             } else {
                 // Login failed, show an error message indicating that the provided credentials are incorrect
-                Toast.makeText(this, "Incorrect username or password. Please try again.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Incorrect username or password", Toast.LENGTH_SHORT).show()
             }
         }
 
