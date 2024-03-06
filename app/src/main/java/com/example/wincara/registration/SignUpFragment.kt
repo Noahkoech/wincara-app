@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.wincara.LoginActivity2
 import com.example.wincara.R
-import com.example.wincara.registration.database.MyDatabaseHelper
+import com.example.wincara.registration.database.MyDatabaseHelper2
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -17,7 +17,7 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        val dbHelper = MyDatabaseHelper(this)
+        val dbHelper = MyDatabaseHelper2(this)
 
         val signupButton = findViewById<Button>(R.id.signupButton)
         signupButton.setOnClickListener {

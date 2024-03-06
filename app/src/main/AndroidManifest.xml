@@ -13,6 +13,15 @@
         android:theme="@style/Theme.WINCARA"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserListActivity"
+            android:exported="false" />
+        <activity
             android:name=".HommeActivity"
             android:exported="false" />
         <activity
