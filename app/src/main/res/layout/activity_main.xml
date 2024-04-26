@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="@drawable/background"
     android:visibility="visible"
     tools:context=".MainActivity"
     tools:visibility="visible">
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:layout_constraintWidth_percent="0.5"
-        app:srcCompat="@drawable/burger3" />
+        app:srcCompat="@drawable/wincaraimage" />
 
     <TextView
         android:id="@+id/textViewHeading"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="WELCOME"
         android:textSize="42sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:text="TO WINCARA EATS"
         android:textSize="42sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/textViewHeading"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

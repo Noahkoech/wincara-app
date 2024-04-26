@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="@drawable/background"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGIN HERE!"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="40sp"
         android:layout_centerInParent="true"/>
 
@@ -22,7 +22,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="100dp"
-        android:src="@drawable/icon_account_circle" />
+        android:src="@drawable/account_logo" />
 
     <EditText
 
@@ -66,7 +66,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sign Up"
+        android:text="click to sign Up"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

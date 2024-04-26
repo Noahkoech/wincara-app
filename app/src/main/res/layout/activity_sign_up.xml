@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="@drawable/background"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".SignUpActivity">
@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SIGN UP HERE!"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="48sp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="32dp" />
@@ -131,7 +131,7 @@
         android:layout_height="wrap_content"
         android:text="Login instead"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@android:color/holo_blue_light"
         android:backgroundTint="@android:color/transparent"/>
 
 </LinearLayout>
